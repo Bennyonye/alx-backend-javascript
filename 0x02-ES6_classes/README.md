@@ -1,7 +1,3 @@
-Here is a suggested README file for your repository:
-
----
-
 # 0x02. ES6 Classes
 
 ## Description
@@ -108,6 +104,3 @@ For more information on the concepts covered in this project, refer to the follo
 ## Author
 This project is developed and maintained by **BennyOnye**.
 
---- 
-
-Feel free to modify the content and structure as needed for your repository. If you need any other specific sections or details included, let me know!
