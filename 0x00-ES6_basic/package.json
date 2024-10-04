@@ -1,0 +1,23 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "description": "## Description This repository contains the project \"0x00. ES6 Basics,\" which explores essential concepts of ECMAScript 6 (ES6). The project covers new features introduced in ES6, such as arrow functions, block-scoped variables, iterables, and iterators, among others. By the end of this project, you will be able to explain the key differences between ES6 and earlier versions of JavaScript, demonstrate an understanding of ES6 features, and implement them effectively in code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "babel-core": "^4.7.16",
+    "babel-jest": "^29.7.0",
+    "babel-preset-env": "^0.0.0",
+    "core-js": "^3.38.1",
+    "eslint": "^9.11.1",
+    "glob": "^11.0.0",
+    "jest": "^29.7.0"
+  }
+}
