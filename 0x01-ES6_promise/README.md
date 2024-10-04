@@ -1,27 +1,28 @@
-# 0x02. ES6 Classes
+# 0x01. ES6 Promises
 
 ## Description
-This project explores the concept of classes in JavaScript, a key feature introduced in ES6 (ECMAScript 2015). It delves into object-oriented programming (OOP) principles, providing practical examples and exercises to help you understand how to define classes, add methods, and extend them. You will also learn about metaprogramming and the use of symbols.
+This project focuses on using **Promises** in JavaScript, which are a key feature introduced in ES6 (ECMAScript 2015) for handling asynchronous operations. You will learn how to create, manage, and use promises effectively in your JavaScript applications, including using the `then`, `catch`, and `resolve` methods. Additionally, you will gain familiarity with `async` functions, the `await` operator, and handling errors with `throw` and `try-catch` blocks.
 
 ## Learning Objectives
-By the end of this project, you should be able to explain and implement the following concepts without external references:
+By the end of this project, you should be able to explain and demonstrate the following concepts:
 
-- How to define a class in JavaScript
-- Adding methods to a class
-- Creating static methods for a class
-- Extending a class from another class
-- Understanding metaprogramming and symbols in JavaScript
+- What Promises are, how they work, and why they are used.
+- How to use the `then`, `resolve`, and `catch` methods with Promises.
+- How to use each method of the Promise object.
+- How to use the `await` operator and `async` functions.
+- How to handle errors using `throw` and `try-catch` blocks.
 
 ## Project Requirements
-The following conditions must be met to run the project:
+To complete and run the project, the following requirements must be met:
 
-- All files will be executed on **Ubuntu 18.04 LTS** using **NodeJS 12.11.x**
-- Preferred editors: `vi`, `vim`, `emacs`, `Visual Studio Code`
-- All files should end with a new line
-- Use the `.js` extension for all JavaScript files
-- Testing will be done using **Jest** and the command `npm run test`
-- Linting will be done using **ESLint**
-- Your code should pass all tests and lint checks; run `npm run full-test` to verify
+- All files will be executed on **Ubuntu 18.04 LTS** using **NodeJS 12.11.x**.
+- Allowed editors: `vi`, `vim`, `emacs`, `Visual Studio Code`.
+- All files should end with a new line.
+- A `README.md` file is mandatory at the root of the project folder.
+- Use the `.js` extension for all JavaScript files.
+- Your code will be tested using **Jest** with the command `npm run test`.
+- Your code will be verified against lint rules using **ESLint**.
+- All functions must be exported.
 
 ## Project Setup
 ### 1. Install NodeJS 12.11.x
@@ -36,32 +37,29 @@ sudo apt install nodejs -y
 Verify the installation:
 
 ```bash
-nodejs -v  # Should output v12.11.1 or similar
-npm -v     # Should output 6.11.3 or similar
+nodejs -v   # Should output v12.11.1 or a similar version
+npm -v      # Should output 6.11.3 or a similar version
 ```
 
-### 2. Install Dependencies
-In your project directory, ensure you have the following dependencies:
-
-- **Jest**: For testing JavaScript code.
-- **Babel**: For JavaScript transpilation.
-- **ESLint**: For code linting and style guide enforcement.
-
-If these dependencies are specified in your `package.json` file, run:
+### 2. Install Project Dependencies
+In your project directory, make sure you have the necessary dependencies specified in your `package.json` file. Run:
 
 ```bash
 npm install
 ```
 
+This will install **Jest**, **Babel**, and **ESLint** for testing, transpilation, and code linting, respectively.
+
 ### 3. Configuration Files
 Ensure that the following configuration files are present in your project directory:
 
 - **`package.json`**: Contains project dependencies and scripts.
-- **`babel.config.js`**: Configuration for Babel.
-- **`.eslintrc.js`**: Configuration for ESLint.
+- **`babel.config.js`**: Configuration file for Babel.
+- **`.eslintrc.js`**: Configuration file for ESLint.
+- **`utils.js`**: Contains utility functions like `uploadPhoto` and `createUser` to be used in specific tasks.
 
 ### 4. Run Tests and Lint
-You can run the tests and lint your code using the commands below:
+Use the following commands to run tests and check for code quality:
 
 - **Run Jest Tests**:
 
@@ -69,7 +67,13 @@ You can run the tests and lint your code using the commands below:
   npm run test
   ```
 
-- **Run Full Test and Lint**:
+- **Run Lint Checks**:
+
+  ```bash
+  npm run lint
+  ```
+
+- **Run Full Test**: This command will run both tests and lint checks.
 
   ```bash
   npm run full-test
@@ -77,29 +81,57 @@ You can run the tests and lint your code using the commands below:
 
 ## How to Use This Repository
 1. Clone the repository to your local machine:
+
    ```bash
-   git clone https://github.com/YourUsername/0x02-ES6-classes.git
+   git clone https://github.com/YourUsername/0x01-ES6-promises.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
-   cd 0x02-ES6-classes
+   cd 0x01-ES6-promises
    ```
 
-3. Install the dependencies:
+3. Install the project dependencies:
+
    ```bash
    npm install
    ```
 
-4. Start working on the project by creating and modifying `.js` files as specified in the project tasks.
+4. Start implementing the tasks and creating `.js` files as required.
 
-5. Run the tests and lint checks regularly to ensure code quality and functionality.
+5. Run the provided Jest tests to ensure your code works as expected.
+
+6. Lint your code regularly to ensure it adheres to the coding standards.
+
+## Response Data Format
+The following response formats will be used by some utility functions within the project:
+
+- **`uploadPhoto`**: Returns a response with the following format:
+
+  ```json
+  {
+    "status": 200,
+    "body": "photo-profile-1"
+  }
+  ```
+
+- **`createUser`**: Returns a response with the following format:
+
+  ```json
+  {
+    "firstName": "Guillaume",
+    "lastName": "Salva"
+  }
+  ```
 
 ## Additional Resources
-For more information on the concepts covered in this project, refer to the following resources:
+For more information on Promises and asynchronous programming in JavaScript, refer to the following resources:
 
-- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [Metaprogramming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming)
+- [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [JavaScript Promise: An introduction](https://developers.google.com/web/fundamentals/primers/promises)
+- [Await and Async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+- [Try and Throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 ## Author
 This project is developed and maintained by **BennyOnye**.
